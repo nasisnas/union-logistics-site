@@ -992,7 +992,37 @@ p  { color: var(--muted); font-size: 1rem; line-height: 1.75; }
   border-radius: 2px;
 }
 
-.nav-cta { margin-left: auto; }
+/* Language toggle */
+.lang-toggle {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  margin-left: auto;
+}
+.lang-toggle:hover {
+  background: var(--orange);
+  color: #fff;
+  border-color: var(--orange);
+}
+
+/* RTL support */
+[dir="rtl"] .nav-links { direction: rtl; }
+[dir="rtl"] .services-grid,
+[dir="rtl"] .features-grid,
+[dir="rtl"] .footer-grid { direction: rtl; }
+[dir="rtl"] .service-card,
+[dir="rtl"] .feature-card,
+[dir="rtl"] .office-card { text-align: right; }
+[dir="rtl"] .lang-toggle { margin-left: 0; margin-right: auto; }
+
+.nav-cta { margin-left: 8px; }
 
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
