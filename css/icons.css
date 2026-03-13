@@ -1,0 +1,25 @@
+/* ── Professional SVG Icon System ──────────────────────────────
+   Replaces all emoji with clean, scalable SVG icons            */
+
+/* Base icon styling */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em; height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+.icon svg {
+  width: 100%; height: 100%;
+  fill: currentColor;
+}
+
+/* Service card icon sizes */
+.service-icon .icon { font-size: 1.6rem; }
+.feature-icon-wrap .icon { font-size: 1.4rem; }
+.page-hero-icon .icon { font-size: 2.5rem; }
+.footer-contact-icon .icon { font-size: 1rem; }
+.office-detail-icon .icon { font-size: 1rem; }
+.office-flag .icon { font-size: 1.5rem; }
