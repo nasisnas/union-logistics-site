@@ -1,37 +1,4 @@
-// ── Theme Switcher ───────────────────────────────────────────
-const THEMES = ['dark', 'minimal', 'geo', 'luxury', 'sbg', 'dhl', 'express'];
-const THEME_LABELS = { dark: 'Dark Navy', minimal: 'Minimal', geo: 'Geometric', luxury: 'Luxury', sbg: 'SBG', dhl: 'DHL', express: 'Express' };
-const THEME_DOTS   = { dark: 'theme-dot-dark', minimal: 'theme-dot-minimal', geo: 'theme-dot-geo', luxury: 'theme-dot-luxury', sbg: 'theme-dot-sbg', dhl: 'theme-dot-dhl', express: 'theme-dot-express' };
-
-function applyTheme(theme) {
-  if (theme === 'dark') {
-    document.documentElement.removeAttribute('data-theme');
-  } else {
-    document.documentElement.setAttribute('data-theme', theme);
-  }
-  localStorage.setItem('ul-theme', theme);
-  document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.theme === theme);
-  });
-}
-
-function buildThemeBar() {
-  const bar = document.createElement('div');
-  bar.className = 'theme-bar';
-  bar.innerHTML = '<span class="theme-bar-label">Theme</span>' +
-    THEMES.map(t => `
-      <button class="theme-btn" data-theme="${t}" aria-label="${THEME_LABELS[t]}">
-        <span class="theme-dot ${THEME_DOTS[t]}"></span>${THEME_LABELS[t]}
-      </button>`).join('');
-  document.body.prepend(bar);
-  bar.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.addEventListener('click', () => applyTheme(btn.dataset.theme));
-  });
-}
-
-buildThemeBar();
-const savedTheme = localStorage.getItem('ul-theme') || 'express';
-applyTheme(savedTheme);
+// Express theme is hardcoded via data-theme="express" on <html>
 
 // ── Navbar scroll effect ─────────────────────────────────────
 const navbar = document.querySelector('.navbar');

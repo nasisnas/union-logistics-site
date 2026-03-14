@@ -82,10 +82,20 @@ const T = {
 
   // ─── Footer ───
   'Premier freight forwarding based in Dubai Airport Free Zone since 2006.': 'شركة شحن رائدة مقرها في منطقة دبي الحرة للمطار منذ 2006.',
+  'Premier freight forwarding and logistics company based in Dubai Airport Free Zone since 2006. Now also operating in Hong Kong.': 'شركة شحن ولوجستيات رائدة مقرها في منطقة دبي الحرة للمطار منذ 2006. تعمل الآن أيضاً في هونغ كونغ.',
+  'Premier freight forwarding based in Dubai Airport Free Zone since 2006. Now also in Hong Kong.': 'شركة شحن رائدة مقرها في منطقة دبي الحرة للمطار منذ 2006. تعمل الآن أيضاً في هونغ كونغ.',
+  '© 2025 Union Logistics. All rights reserved. | Dubai Airport Free Zone, UAE': '© 2025 يونيون لوجستكس. جميع الحقوق محفوظة. | منطقة دبي الحرة للمطار، الإمارات',
   'Quick Links': 'روابط سريعة',
   'Contact Us': 'اتصل بنا',
   'All rights reserved.': 'جميع الحقوق محفوظة.',
   'Dubai Airport Free Zone, UAE': 'منطقة دبي الحرة للمطار، الإمارات',
+
+  // ─── Contact Page - Office Details ───
+  'Dubai Airport Free Zone': 'منطقة دبي الحرة للمطار',
+  'Ming Wah Industrial Building, Tsuen Wan': 'مبنى مينغ واه الصناعي، تسوين وان',
+  'Damascus, Syria': 'دمشق، سوريا',
+  'Riyadh, Kingdom of Saudi Arabia': 'الرياض، المملكة العربية السعودية',
+  'Miami, Florida, USA': 'ميامي، فلوريدا، الولايات المتحدة',
 
   // ─── Services Page ───
   'Our Services': 'خدماتنا',
@@ -286,6 +296,7 @@ function applyLanguage() {
   // Handle complex elements with mixed content (h1 with <br> and <span>)
   document.querySelectorAll('h1, h2').forEach(el => {
     if (el.closest('.logo-wordmark')) return;
+    // Translate gradient-text spans
     el.querySelectorAll('.gradient-text').forEach(span => {
       const text = span.textContent.trim();
       if (isAR && T[text] && !span.getAttribute('data-en')) {
@@ -294,6 +305,19 @@ function applyLanguage() {
       } else if (!isAR && span.getAttribute('data-en')) {
         span.textContent = span.getAttribute('data-en');
         span.removeAttribute('data-en');
+      }
+    });
+    // Translate bare text nodes (e.g. "Connecting the", "to the World")
+    el.childNodes.forEach(node => {
+      if (node.nodeType !== 3) return; // text nodes only
+      const text = node.textContent.trim();
+      if (!text) return;
+      if (isAR && T[text] && !node._origText) {
+        node._origText = node.textContent;
+        node.textContent = node.textContent.replace(text, T[text]);
+      } else if (!isAR && node._origText) {
+        node.textContent = node._origText;
+        delete node._origText;
       }
     });
   });
