@@ -13,7 +13,7 @@ const T = {
   'Login': 'تسجيل الدخول',
 
   // ─── Hero Section (index) ───
-  'Now in 6 locations and partners': 'الآن في 6 مواقع وشركاء',
+  'Now in more than 6 branches worldwide and partners in many more': 'الآن في أكثر من 6 فروع حول العالم وشركاء في أماكن أخرى كثيرة',
   'Connecting the': 'نربط',
   'Middle East': 'الشرق الأوسط',
   'to the World': 'بالعالم',
