@@ -1,0 +1,129 @@
+/* ============================================================
+   UNION LOGISTICS – Brand Color Palette
+   Copy this file into any project to match the Express theme.
+   ============================================================ */
+
+:root {
+  /* ─── Primary Brand Colors ─────────────────────────────────
+     These are the two core brand colors used everywhere.       */
+  --ul-orange:         #F47B20;   /* Primary accent — CTAs, links, badges, active states, logo */
+  --ul-blue:           #1B4FD8;   /* Secondary accent — stats bar, feature icons, hover accents, card top-borders */
+
+  /* ─── Orange Variants ──────────────────────────────────────
+     Lighter/paler versions for hover states and backgrounds.   */
+  --ul-orange-light:   #F99A4A;   /* Orange hover state — button :hover, link :hover */
+  --ul-orange-pale:    rgba(244, 123, 32, 0.08);  /* Very subtle orange tint — badge backgrounds, form success bg */
+  --ul-orange-glow:    rgba(244, 123, 32, 0.15);  /* Orange box-shadow glow — CTA button shadow */
+
+  /* ─── Blue Variants ────────────────────────────────────────
+     Used for secondary interactive elements and backgrounds.   */
+  --ul-blue-light:     #2A5CE0;   /* Blue hover — feature icon hover */
+  --ul-blue-pale:      rgba(27, 79, 216, 0.08);   /* Very subtle blue tint — customer care strip bg */
+  --ul-blue-glow:      rgba(27, 79, 216, 0.10);   /* Blue box-shadow glow — card shadow on hover */
+
+  /* ─── Backgrounds ──────────────────────────────────────────
+     Clean white-based background hierarchy.                    */
+  --ul-bg-primary:     #FFFFFF;   /* Page background, navbar, cards */
+  --ul-bg-secondary:   #F7F7F7;  /* Alternating sections, services section bg */
+  --ul-bg-tertiary:    #EFEFEF;  /* Subtle section dividers, input field bg */
+
+  /* ─── Text Colors ──────────────────────────────────────────
+     Dark text on light backgrounds.                            */
+  --ul-text-primary:   #1A1A1A;  /* Headings, body text, strong content */
+  --ul-text-secondary: #666666;  /* Subtext, muted labels, nav links, footer text */
+  --ul-text-muted:     #999999;  /* Placeholder text, timestamps, helper text */
+
+  /* ─── Borders & Dividers ───────────────────────────────────
+     Subtle borders for cards, inputs, and section dividers.    */
+  --ul-border:         rgba(0, 0, 0, 0.10);  /* Default border — cards, inputs, section dividers */
+  --ul-border-hover:   rgba(0, 0, 0, 0.12);  /* Border on hover — card hover, active input */
+  --ul-border-strong:  rgba(0, 0, 0, 0.20);  /* Stronger border — outline buttons */
+
+  /* ─── Footer / Dark Sections ───────────────────────────────
+     Dark navy used for footer and inverted sections.           */
+  --ul-dark-bg:        #081018;  /* Footer background */
+  --ul-dark-mid:       #0E1B2E;  /* Footer card/section background */
+  --ul-dark-text:      #F2F6FF;  /* Light text on dark backgrounds */
+  --ul-dark-muted:     #7A90B2;  /* Muted text on dark backgrounds */
+  --ul-dark-border:    rgba(255, 255, 255, 0.07);  /* Subtle borders on dark backgrounds */
+
+  /* ─── Glass / Overlay ──────────────────────────────────────
+     Semi-transparent overlays for glass effects and modals.    */
+  --ul-glass:          rgba(255, 255, 255, 0.95);  /* Navbar scrolled bg, modal bg */
+  --ul-overlay:        rgba(0, 0, 0, 0.6);         /* Modal/dialog overlay backdrop */
+
+  /* ─── Gradients ────────────────────────────────────────────
+     Used for gradient text, hero overlays, and CTA sections.   */
+  --ul-gradient-text:  linear-gradient(135deg, #F47B20 0%, #FF9540 50%, #1B4FD8 100%);  /* .gradient-text headings */
+  --ul-gradient-hero:  linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.92) 100%);  /* Hero overlay */
+  --ul-gradient-cta:   linear-gradient(135deg, #1B4FD8 0%, #0D47A1 100%);  /* CTA banner / stats bar bg */
+  --ul-gradient-sun:   radial-gradient(circle, #FFD54F, #FF8F00);   /* Globe sun */
+  --ul-gradient-moon:  radial-gradient(circle at 65% 35%, #E0E0E0, #9E9E9E);  /* Globe moon */
+
+  /* ─── Border Radius ────────────────────────────────────────
+     Consistent rounding across all components.                 */
+  --ul-radius-sm:      4px;   /* Buttons, tags, small elements */
+  --ul-radius-md:      8px;   /* Cards, inputs, dropdowns */
+  --ul-radius-lg:      12px;  /* Sections, large containers, images */
+
+  /* ─── Typography ───────────────────────────────────────────
+     Font families used throughout the site.                    */
+  --ul-font-body:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ul-font-display:   'Roboto Condensed', 'Inter', sans-serif;  /* Headings, stat numbers, logo */
+  --ul-font-arabic:    'Noto Sans Arabic', 'Segoe UI', sans-serif;  /* Arabic text */
+
+  /* ─── Shadows ──────────────────────────────────────────────
+     Elevation shadows for cards and interactive elements.      */
+  --ul-shadow-sm:      0 1px 3px rgba(0, 0, 0, 0.06);    /* Default card shadow */
+  --ul-shadow-md:      0 6px 20px rgba(0, 0, 0, 0.08);   /* Card hover shadow */
+  --ul-shadow-lg:      0 6px 24px rgba(0, 0, 0, 0.08);   /* Modal / elevated elements */
+  --ul-shadow-orange:  0 4px 20px rgba(244, 123, 32, 0.15);  /* Orange button glow */
+  --ul-shadow-blue:    0 4px 20px rgba(27, 79, 216, 0.10);   /* Blue element glow */
+}
+
+
+/* ─── USAGE REFERENCE ────────────────────────────────────────
+   Where each color is used on the Union Logistics site:
+
+   ORANGE (#F47B20)
+   • Primary CTA buttons (Get a Quote, Send Message, Login)
+   • Navigation active link underline
+   • Hero badge pulse dot
+   • Scroll indicator line
+   • Service card links ("Learn More →")
+   • Contact page links and hover states
+   • Logo "UNION" text color
+   • Office sub-labels
+
+   BLUE (#1B4FD8)
+   • Stats bar background (full-width)
+   • Feature icon containers (icon backgrounds)
+   • Service card top border (4px accent)
+   • Capability item checkmark circles
+   • CTA banner gradient background
+   • Card hover border accent
+   • Gradient text (end color)
+
+   WHITE (#FFFFFF)
+   • Page background, navbar, card backgrounds
+
+   LIGHT GRAY (#F7F7F7)
+   • Alternating section backgrounds (services, features)
+
+   DARK (#1A1A1A)
+   • All headings (h1-h5)
+   • Body text
+   • Menu links on hover/active
+   • Hamburger menu icon
+
+   MUTED (#666666)
+   • Navigation links (default state)
+   • Paragraph body text
+   • Logo "LOGISTICS" text
+   • Footer text
+
+   DARK NAVY (#081018, #0E1B2E)
+   • Footer background
+   • Footer card sections
+   • Map placeholder background
+   ──────────────────────────────────────────────────────────── */
