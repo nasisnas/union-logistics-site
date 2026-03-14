@@ -6,20 +6,20 @@
 :root {
   /* ─── Primary Brand Colors ─────────────────────────────────
      These are the two core brand colors used everywhere.       */
-  --ul-orange:         #F47B20;   /* Primary accent — CTAs, links, badges, active states, logo */
-  --ul-blue:           #1B4FD8;   /* Secondary accent — stats bar, feature icons, hover accents, card top-borders */
+  --ul-orange:         #F47B20;   /* Primary accent - CTAs, links, badges, active states, logo */
+  --ul-blue:           #1B4FD8;   /* Secondary accent - stats bar, feature icons, hover accents, card top-borders */
 
   /* ─── Orange Variants ──────────────────────────────────────
      Lighter/paler versions for hover states and backgrounds.   */
-  --ul-orange-light:   #F99A4A;   /* Orange hover state — button :hover, link :hover */
-  --ul-orange-pale:    rgba(244, 123, 32, 0.08);  /* Very subtle orange tint — badge backgrounds, form success bg */
-  --ul-orange-glow:    rgba(244, 123, 32, 0.15);  /* Orange box-shadow glow — CTA button shadow */
+  --ul-orange-light:   #F99A4A;   /* Orange hover state - button :hover, link :hover */
+  --ul-orange-pale:    rgba(244, 123, 32, 0.08);  /* Very subtle orange tint - badge backgrounds, form success bg */
+  --ul-orange-glow:    rgba(244, 123, 32, 0.15);  /* Orange box-shadow glow - CTA button shadow */
 
   /* ─── Blue Variants ────────────────────────────────────────
      Used for secondary interactive elements and backgrounds.   */
-  --ul-blue-light:     #2A5CE0;   /* Blue hover — feature icon hover */
-  --ul-blue-pale:      rgba(27, 79, 216, 0.08);   /* Very subtle blue tint — customer care strip bg */
-  --ul-blue-glow:      rgba(27, 79, 216, 0.10);   /* Blue box-shadow glow — card shadow on hover */
+  --ul-blue-light:     #2A5CE0;   /* Blue hover - feature icon hover */
+  --ul-blue-pale:      rgba(27, 79, 216, 0.08);   /* Very subtle blue tint - customer care strip bg */
+  --ul-blue-glow:      rgba(27, 79, 216, 0.10);   /* Blue box-shadow glow - card shadow on hover */
 
   /* ─── Backgrounds ──────────────────────────────────────────
      Clean white-based background hierarchy.                    */
@@ -35,9 +35,9 @@
 
   /* ─── Borders & Dividers ───────────────────────────────────
      Subtle borders for cards, inputs, and section dividers.    */
-  --ul-border:         rgba(0, 0, 0, 0.10);  /* Default border — cards, inputs, section dividers */
-  --ul-border-hover:   rgba(0, 0, 0, 0.12);  /* Border on hover — card hover, active input */
-  --ul-border-strong:  rgba(0, 0, 0, 0.20);  /* Stronger border — outline buttons */
+  --ul-border:         rgba(0, 0, 0, 0.10);  /* Default border - cards, inputs, section dividers */
+  --ul-border-hover:   rgba(0, 0, 0, 0.12);  /* Border on hover - card hover, active input */
+  --ul-border-strong:  rgba(0, 0, 0, 0.20);  /* Stronger border - outline buttons */
 
   /* ─── Footer / Dark Sections ───────────────────────────────
      Dark navy used for footer and inverted sections.           */
