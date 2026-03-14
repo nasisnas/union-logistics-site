@@ -1412,9 +1412,9 @@ p  { color: var(--muted); font-size: 1rem; line-height: 1.75; }
 }
 .footer-brand .logo { margin-bottom: 16px; }
 .footer-brand .logo-globe {
-  width: 64px; height: 64px;
+  width: 160px; height: 160px;
 }
-.footer-brand .logo-u { font-size: 2rem; }
+.footer-brand .logo-u { font-size: 5rem; }
 .footer-brand p { font-size: 0.88rem; line-height: 1.7; max-width: 280px; }
 
 .footer-col h5 {

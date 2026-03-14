@@ -287,6 +287,56 @@ const T = {
   'ahmed@company.com': 'ahmed@company.com',
   '+971 50 000 0000': '+971 50 000 0000',
   'Please describe your shipment requirements, origin, destination, and any special handling needs...': 'يرجى وصف متطلبات شحنتك، المنشأ، الوجهة، وأي احتياجات مناولة خاصة...',
+
+  // ─── Footer Columns ───
+  'Company': 'الشركة',
+  'Dubai Office': 'مكتب دبي',
+  'Warehouse J-06, Dubai Airport Free Zone, UAE': 'مستودع J-06، منطقة دبي الحرة للمطار، الإمارات',
+  'Warehouse J-06, Dubai Airport Free Zone, Dubai, UAE': 'مستودع J-06، منطقة دبي الحرة للمطار، دبي، الإمارات',
+  'Customs Clearing': 'التخليص الجمركي',
+  'Global Logistics': 'اللوجستيات العالمية',
+
+  // ─── Contact Page – Office Details ───
+  'Reach out to our team in Dubai or Hong Kong — we\'re here to help with your freight and logistics needs.': 'تواصل مع فريقنا في دبي أو هونغ كونغ — نحن هنا لمساعدتك في احتياجات الشحن واللوجستيات.',
+  'Two Offices,': 'مكتبان،',
+  'One Team': 'فريق واحد',
+  'Dubai Headquarters': 'المقر الرئيسي في دبي',
+  'UNION LOGISTICS': 'يونيون لوجستكس',
+  'Warehouse No. J-06, Dubai Airport Free Zone': 'مستودع رقم J-06، منطقة دبي الحرة للمطار',
+  'P.O. Box 293546, Dubai, UAE': 'ص.ب 293546، دبي، الإمارات',
+  'www.unionlogistics.ae': 'www.unionlogistics.ae',
+  'UNION LOGISTICS HONG KONG (CHINA) LTD': 'يونيون لوجستكس هونغ كونغ (الصين) المحدودة',
+  'Factory Unit A, 13/F, Ming Wah Industrial Building': 'وحدة مصنع A، الطابق 13، مبنى مينغ واه الصناعي',
+  '13-33 Wang Lung Street, Tsuen Wan': '13-33 شارع وانغ لونغ، تسوين وان',
+  'New Territories, Hong Kong': 'الأراضي الجديدة، هونغ كونغ',
+  'Union Logistics Warehouse': 'مستودع يونيون لوجستكس',
+  'Damascus Free Zone': 'المنطقة الحرة بدمشق',
+  'KSA': 'المملكة العربية السعودية',
+  'Riyadh Dry Port': 'ميناء الرياض الجاف',
+  'Riyadh, Saudi Arabia': 'الرياض، السعودية',
+  'Miami Free Trade Zone': 'منطقة ميامي للتجارة الحرة',
+  'Miami, FL, USA': 'ميامي، فلوريدا، الولايات المتحدة',
+
+  // ─── Customs Page – Feature Descriptions ───
+  'Certified packing and crating services for all cargo types, including fragile, high-value and oversized goods. Material and methods meet international standards.': 'خدمات تعبئة وتغليف معتمدة لجميع أنواع البضائع، بما في ذلك الهشة وعالية القيمة وكبيرة الحجم. المواد والأساليب تلبي المعايير الدولية.',
+  'Full-service overseas moving — from door collection through customs clearance, international freight and delivery at your new destination. For businesses and individuals.': 'خدمات نقل دولي شاملة — من الاستلام من الباب عبر التخليص الجمركي والشحن الدولي والتوصيل إلى وجهتك الجديدة.',
+  'Time-Critical Courier': 'بريد سريع عاجل',
+  'When every minute counts, our express courier network delivers urgent documents and parcels domestically and internationally with guaranteed timelines.': 'عندما كل دقيقة تهم، شبكة البريد السريع لدينا توصل المستندات والطرود العاجلة محلياً ودولياً بمواعيد مضمونة.',
+  'Need Help with': 'هل تحتاج مساعدة في',
+  'Customs Clearance': 'التخليص الجمركي',
+  'Our experienced customs team is ready to handle your clearance and ensure your cargo moves without delays.': 'فريق الجمارك ذو الخبرة لدينا جاهز لتولي التخليص وضمان حركة بضائعك بدون تأخير.',
+  'Contact Our Team': 'تواصل مع فريقنا',
+
+  // ─── Sea Freight – CTA ───
+  'Get competitive ocean freight quotes and reliable routing solutions from our sea freight experts.': 'احصل على عروض أسعار شحن بحري تنافسية وحلول مسارات موثوقة من خبراء الشحن البحري لدينا.',
+  'Request a Quote': 'اطلب عرض سعر',
+  'Sea': 'البحر',
+
+  // ─── Road Transport ───
+  'UAE Land Freight': 'الشحن البري في الإمارات',
+
+  // ─── Mobile Menu ───
+  'Get a Quote': 'طلب عرض سعر',
 };
 
 let currentLang = localStorage.getItem('ul-lang') || 'en';
@@ -322,12 +372,13 @@ function applyLanguage() {
   // Translate all text elements
   const selectors = [
     'h1', 'h2', 'h3', 'h4', 'h5',
-    'p', 'a', 'button', 'span', 'label', 'option',
+    'p', 'a', 'button', 'span', 'label', 'option', 'li', 'div',
     '.section-label', '.section-subtitle',
     '.hero-stat-label', '.stat-label',
     '.about-feature', '.about-badge-text',
     '.service-link', '.capability-item',
     '.office-sub', '.nav-cta',
+    '.footer-contact-item', '.office-info',
     '.hero-badge', '.scroll-indicator span',
   ].join(', ');
 

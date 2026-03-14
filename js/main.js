@@ -87,7 +87,9 @@ function updateCelestial() {
   document.querySelectorAll('.globe-celestial').forEach(el => {
     // Map hour to angle (0h = bottom, 12h = top, full circle = 24h)
     const angle = ((hour / 24) * 360 - 90) * (Math.PI / 180);
-    const radius = 26; // orbit radius in px
+    const globe = el.parentElement;
+    const size = globe ? globe.offsetWidth : 42;
+    const radius = size * 0.62; // orbit radius scales with globe
     const x = Math.cos(angle) * radius;
     const y = Math.sin(angle) * radius;
 
