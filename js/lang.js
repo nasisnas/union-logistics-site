@@ -373,7 +373,7 @@ function applyLanguage() {
   // Translate all text elements
   const selectors = [
     'h1', 'h2', 'h3', 'h4', 'h5',
-    'p', 'a', 'button', 'span', 'label', 'option', 'li', 'div',
+    'p', 'a', 'button', 'span', 'label', 'option', 'li',
     '.section-label', '.section-subtitle',
     '.hero-stat-label', '.stat-label',
     '.about-feature', '.about-badge-text',
@@ -388,6 +388,9 @@ function applyLanguage() {
     // Only translate leaf text or elements with simple text content
     if (el.closest('.logo-wordmark') || el.closest('.logo')) return;
     if (el.tagName === 'SCRIPT' || el.tagName === 'STYLE') return;
+    // Only translate leaf elements (no child elements, or only text/br/svg children)
+    const hasChildElements = Array.from(el.children).some(c => !['BR','SVG','IMG'].includes(c.tagName) && !c.classList.contains('icon') && !c.classList.contains('gradient-text'));
+    if (hasChildElements && el.children.length > 0 && !el.classList.contains('about-feature') && !el.classList.contains('capability-item')) return;
 
     const text = el.textContent.trim();
     if (!text) return;
