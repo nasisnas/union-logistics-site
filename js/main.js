@@ -70,9 +70,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 function initGlobeCelestial() {
   document.querySelectorAll('.logo-globe').forEach(globe => {
     if (globe.querySelector('.globe-celestial')) return;
-    const el = document.createElement('div');
-    el.className = 'globe-celestial';
-    globe.appendChild(el);
+    // Create both sun and moon
+    const sun = document.createElement('div');
+    sun.className = 'globe-celestial globe-sun';
+    globe.appendChild(sun);
+    const moon = document.createElement('div');
+    moon.className = 'globe-celestial globe-moon';
+    globe.appendChild(moon);
   });
   updateCelestial();
   setInterval(updateCelestial, 60000);
@@ -80,23 +84,25 @@ function initGlobeCelestial() {
 
 function updateCelestial() {
   const now = new Date();
-  // Use viewer's local hour; JS Date always gives local time
   const hour = now.getHours() + now.getMinutes() / 60;
-  const isDay = hour >= 6 && hour < 18;
+  // Sun angle based on hour
+  const sunAngle = ((hour / 24) * 360 - 90) * (Math.PI / 180);
+  // Moon on opposite side (180° offset)
+  const moonAngle = sunAngle + Math.PI;
 
-  document.querySelectorAll('.globe-celestial').forEach(el => {
-    // Map hour to angle (0h = bottom, 12h = top, full circle = 24h)
-    const angle = ((hour / 24) * 360 - 90) * (Math.PI / 180);
-    const globe = el.parentElement;
-    const size = globe ? globe.offsetWidth : 42;
-    const radius = size * 0.62; // orbit radius scales with globe
-    const x = Math.cos(angle) * radius;
-    const y = Math.sin(angle) * radius;
+  document.querySelectorAll('.logo-globe').forEach(globe => {
+    const size = globe.offsetWidth || 42;
+    const radius = size * 0.62;
 
-    el.style.transform = `translate(${x}px, ${y}px)`;
-    el.className = isDay
-      ? 'globe-celestial globe-sun'
-      : 'globe-celestial globe-moon';
+    const sun = globe.querySelector('.globe-sun');
+    const moon = globe.querySelector('.globe-moon');
+
+    if (sun) {
+      sun.style.transform = `translate(${Math.cos(sunAngle) * radius}px, ${Math.sin(sunAngle) * radius}px)`;
+    }
+    if (moon) {
+      moon.style.transform = `translate(${Math.cos(moonAngle) * radius}px, ${Math.sin(moonAngle) * radius}px)`;
+    }
   });
 }
 

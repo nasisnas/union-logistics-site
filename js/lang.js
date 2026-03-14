@@ -13,7 +13,7 @@ const T = {
   'Login': 'تسجيل الدخول',
 
   // ─── Hero Section (index) ───
-  'Now operating in Dubai & Hong Kong': 'نعمل الآن في دبي وهونغ كونغ',
+  'Now in 6 locations and partners': 'الآن في 6 مواقع وشركاء',
   'Connecting the': 'نربط',
   'Middle East': 'الشرق الأوسط',
   'to the World': 'بالعالم',
