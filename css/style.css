@@ -1012,28 +1012,38 @@ p  { color: var(--muted); font-size: 1rem; line-height: 1.75; }
   border-color: var(--orange);
 }
 
-/* RTL support */
-[dir="rtl"] .nav-links { direction: rtl; }
-[dir="rtl"] .services-grid,
-[dir="rtl"] .features-grid,
-[dir="rtl"] .footer-grid,
-[dir="rtl"] .stats-grid { direction: rtl; }
+/* RTL support — text direction only, no layout flipping */
+[dir="rtl"] { direction: rtl; }
+[dir="rtl"] p,
+[dir="rtl"] .hero-sub,
 [dir="rtl"] .service-card,
 [dir="rtl"] .feature-card,
 [dir="rtl"] .office-card,
 [dir="rtl"] .about-features,
+[dir="rtl"] .about-feature,
 [dir="rtl"] .capability-item,
-[dir="rtl"] p, [dir="rtl"] .hero-sub { text-align: right; }
+[dir="rtl"] .stat-label,
+[dir="rtl"] .hero-stat-label,
+[dir="rtl"] .breadcrumb,
+[dir="rtl"] .footer-col { text-align: right; }
 [dir="rtl"] .text-center,
 [dir="rtl"] .hero-content,
-[dir="rtl"] .cta-banner { text-align: center; }
-[dir="rtl"] .lang-toggle { margin-left: 0; margin-right: auto; }
-/* Keep logo always LTR */
+[dir="rtl"] .cta-banner,
+[dir="rtl"] .hero-stats { text-align: center; }
+/* Keep all layouts LTR — no flipping images, grids, or navbar */
+[dir="rtl"] .navbar-inner,
+[dir="rtl"] .nav-links,
+[dir="rtl"] .services-grid,
+[dir="rtl"] .features-grid,
+[dir="rtl"] .footer-grid,
+[dir="rtl"] .stats-grid,
+[dir="rtl"] .about-grid,
+[dir="rtl"] .detail-grid,
+[dir="rtl"] .service-row,
+[dir="rtl"] .hero-actions { direction: ltr; }
+/* Keep logo on the left, untouched */
 [dir="rtl"] .logo,
 [dir="rtl"] .logo-wordmark { direction: ltr; }
-[dir="rtl"] .navbar-inner { flex-direction: row-reverse; }
-[dir="rtl"] .nav-links { flex-direction: row-reverse; }
-[dir="rtl"] .logo { order: 999; }
 
 .nav-cta { margin-left: 8px; }
 
