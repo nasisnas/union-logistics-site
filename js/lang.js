@@ -297,6 +297,7 @@ const T = {
   'Global Logistics': 'اللوجستيات العالمية',
 
   // ─── Contact Page – Office Details ───
+  'Reach out to our team in Dubai or Hong Kong — we\'re here to help with your freight and logistics needs 24×7.': 'تواصل مع فريقنا في دبي أو هونغ كونغ — نحن هنا لمساعدتك في احتياجات الشحن واللوجستيات على مدار الساعة.',
   'Reach out to our team in Dubai or Hong Kong — we\'re here to help with your freight and logistics needs.': 'تواصل مع فريقنا في دبي أو هونغ كونغ — نحن هنا لمساعدتك في احتياجات الشحن واللوجستيات.',
   'Two Offices,': 'مكتبان،',
   'One Team': 'فريق واحد',
