@@ -2,8 +2,14 @@
 
 // ── Navbar scroll effect ─────────────────────────────────────
 const navbar = document.querySelector('.navbar');
+const scrollIndicator = document.querySelector('.scroll-indicator');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 20);
+  // Hide scroll indicator once user scrolls
+  if (scrollIndicator && window.scrollY > 50) {
+    scrollIndicator.style.opacity = '0';
+    scrollIndicator.style.pointerEvents = 'none';
+  }
 });
 
 // ── Mobile menu ──────────────────────────────────────────────
