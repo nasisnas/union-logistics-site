@@ -1356,7 +1356,7 @@ p  { color: var(--muted); font-size: 1rem; line-height: 1.75; }
 }
 .contact-layout .contact-form { max-width: 640px; margin: 0 auto; width: 100%; }
 .offices-grid-main {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 10px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 20px;
 }
 .offices-grid-main .office-card { margin-bottom: 0; }
 .warehouse-grid {
