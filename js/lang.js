@@ -309,6 +309,7 @@ const T = {
   'Reach out to our team in Dubai or any of our other branches - we\'re here to help with your freight and logistics needs 24×7.': 'تواصل مع فريقنا في دبي أو أي من فروعنا الأخرى - نحن هنا لمساعدتك في احتياجات الشحن واللوجستيات على مدار الساعة.',
   'Reach out to our team in Dubai or Hong Kong - we\'re here to help with your freight and logistics needs.': 'تواصل مع فريقنا في دبي أو هونغ كونغ - نحن هنا لمساعدتك في احتياجات الشحن واللوجستيات.',
   'Two Offices,': 'مكتبان،',
+  'Offices Worldwide,': 'مكاتب حول العالم،',
   'One Team': 'فريق واحد',
   'Dubai Headquarters': 'المقر الرئيسي في دبي',
   'UNION LOGISTICS': 'يونيون لوجستكس',
