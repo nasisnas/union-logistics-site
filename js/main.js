@@ -68,7 +68,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // ── Globe Sun/Moon ───────────────────────────────────────────
 function initGlobeCelestial() {
-  document.querySelectorAll('.logo-globe').forEach(globe => {
+  document.querySelectorAll('.footer-brand .logo-globe').forEach(globe => {
     if (globe.querySelector('.globe-celestial')) return;
     // Create both sun and moon
     const sun = document.createElement('div');
