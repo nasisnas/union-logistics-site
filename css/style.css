@@ -978,7 +978,7 @@ p  { color: var(--muted); font-size: 1rem; line-height: 1.75; }
 .nav-links a {
   padding: 8px 14px;
   border-radius: 8px;
-  font-size: 0.875rem; font-weight: 500;
+  font-size: 0.875rem; font-weight: 500; white-space: nowrap;
   color: var(--muted);
   transition: var(--transition);
   position: relative;
