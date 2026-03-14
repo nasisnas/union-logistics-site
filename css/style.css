@@ -1016,11 +1016,24 @@ p  { color: var(--muted); font-size: 1rem; line-height: 1.75; }
 [dir="rtl"] .nav-links { direction: rtl; }
 [dir="rtl"] .services-grid,
 [dir="rtl"] .features-grid,
-[dir="rtl"] .footer-grid { direction: rtl; }
+[dir="rtl"] .footer-grid,
+[dir="rtl"] .stats-grid { direction: rtl; }
 [dir="rtl"] .service-card,
 [dir="rtl"] .feature-card,
-[dir="rtl"] .office-card { text-align: right; }
+[dir="rtl"] .office-card,
+[dir="rtl"] .about-features,
+[dir="rtl"] .capability-item,
+[dir="rtl"] p, [dir="rtl"] .hero-sub { text-align: right; }
+[dir="rtl"] .text-center,
+[dir="rtl"] .hero-content,
+[dir="rtl"] .cta-banner { text-align: center; }
 [dir="rtl"] .lang-toggle { margin-left: 0; margin-right: auto; }
+/* Keep logo always LTR */
+[dir="rtl"] .logo,
+[dir="rtl"] .logo-wordmark { direction: ltr; }
+[dir="rtl"] .navbar-inner { flex-direction: row-reverse; }
+[dir="rtl"] .nav-links { flex-direction: row-reverse; }
+[dir="rtl"] .logo { order: 999; }
 
 .nav-cta { margin-left: 8px; }
 
