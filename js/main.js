@@ -82,7 +82,7 @@ function updateCelestial() {
   const now = new Date();
   // Use viewer's local hour; JS Date always gives local time
   const hour = now.getHours() + now.getMinutes() / 60;
-  const isDay = hour >= 6 && hour < 19;
+  const isDay = hour >= 6 && hour < 18;
 
   document.querySelectorAll('.globe-celestial').forEach(el => {
     // Map hour to angle (0h = bottom, 12h = top, full circle = 24h)
