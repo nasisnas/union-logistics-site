@@ -7,7 +7,7 @@
   <meta name="description" content="Contact Union Logistics. Dubai Airport Free Zone: +971 4 299 6565 | info@unionlogistics.ae. Hong Kong: +852 2419 9690 | vimal@unionlogisticshk.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/style.css?v=20260315t">
+  <link rel="stylesheet" href="css/style.css?v=20260315u">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231B3E8F'/><text y='22' x='5' font-size='18' font-family='Arial' font-weight='900' fill='%23F47B20'>U</text></svg>">
 </head>
 <body>
@@ -56,6 +56,7 @@
         <span class="section-label">Our Offices</span>
         <h2 class="section-title" style="margin-bottom:36px;">Offices Worldwide<br><span class="gradient-text">One Team</span></h2>
 
+        <div class="offices-grid-main">
         <!-- Dubai -->
         <div class="office-card reveal">
           <div class="office-flag"><svg class="icon" viewBox="0 0 36 24"><rect width="36" height="6" fill="#00732F"/><rect y="6" width="36" height="6" fill="#FFF"/><rect y="12" width="36" height="6" fill="#000"/><rect y="18" width="36" height="6" fill="#FF0000"/><rect width="9" height="24" fill="#FF0000"/></svg></div>
@@ -104,6 +105,7 @@
             <span class="office-detail-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
             <span><a href="mailto:vimal@unionlogisticshk.com">vimal@unionlogisticshk.com</a></span>
           </div>
+        </div>
         </div>
         </div>
 
@@ -169,14 +171,6 @@
         </div>
         </div>
 
-        <!-- Customer Care Strip -->
-        <div style="background:var(--blue-pale);border:1px solid rgba(27,62,143,0.3);border-radius:var(--radius-md);padding:20px 24px;display:flex;align-items:center;gap:16px;" class="reveal reveal-delay-2">
-          <span style="font-size:1.5rem;"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg></span>
-          <div>
-            <div style="font-weight:700;font-size:0.95rem;color:var(--white);">Customer Care - Queries</div>
-            <div style="font-size:0.88rem;color:var(--muted);margin-top:2px;">Tel: <a href="tel:+97142996565" style="color:var(--orange);">+971 4 299 6565</a> &nbsp;|&nbsp; Email: <a href="mailto:info@unionlogistics.ae" style="color:var(--orange);">info@unionlogistics.ae</a></div>
-          </div>
-        </div>
       </div>
 
       <!-- Contact Form -->
@@ -223,6 +217,15 @@
             Send Message →
           </button>
         </form>
+
+        <!-- Customer Care Strip -->
+        <div style="background:var(--blue-pale);border:1px solid rgba(27,62,143,0.3);border-radius:var(--radius-md);padding:20px 24px;display:flex;align-items:center;gap:16px;" class="reveal reveal-delay-2">
+          <span style="font-size:1.5rem;"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg></span>
+          <div>
+            <div style="font-weight:700;font-size:0.95rem;color:var(--white);">Customer Care - Queries</div>
+            <div style="font-size:0.88rem;color:var(--muted);margin-top:2px;">Tel: <a href="tel:+97142996565" style="color:var(--orange);">+971 4 299 6565</a> &nbsp;|&nbsp; Email: <a href="mailto:info@unionlogistics.ae" style="color:var(--orange);">info@unionlogistics.ae</a></div>
+          </div>
+        </div>
         <div id="formSuccess" style="display:none;margin-top:20px;padding:20px;background:rgba(244,123,32,0.1);border:1px solid rgba(244,123,32,0.35);border-radius:var(--radius-md);text-align:center;">
           <div style="font-size:2rem;margin-bottom:8px;"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
           <div style="font-weight:700;color:var(--white);">Message Sent Successfully!</div>
@@ -280,7 +283,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260315t"></script>
+<script src="js/main.js?v=20260315u"></script>
 <script>
 function handleSubmit(e) {
   e.preventDefault();
