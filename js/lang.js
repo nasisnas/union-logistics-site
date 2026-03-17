@@ -37,6 +37,7 @@ const T = {
   'Multiple warehouses inside DAFZA and JAFZA': 'مستودعات متعددة داخل دافزا وجافزا',
   'Advanced IT system for track & trace': 'نظام تقنية معلومات متقدم للتتبع',
   'Offices in Dubai (UAE) and Hong Kong (China)': 'مكاتب في دبي (الإمارات) وهونغ كونغ (الصين)',
+  'Offices worldwide': 'مكاتب حول العالم',
   'Highly experienced freight forwarding professionals': 'متخصصون ذوو خبرة عالية في الشحن',
   '24×7 time-critical operations': 'عمليات على مدار الساعة طوال الأسبوع',
   'View All Services →': 'عرض جميع الخدمات →',
