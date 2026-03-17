@@ -32,7 +32,7 @@ const T = {
   'About Union Logistics': 'عن يونيون لوجستكس',
   'The Logistics Hub of the': 'مركز اللوجستيات في',
   'Established in 2006, Union Logistics is logically located in the heart of Dubai, UAE - with our own dedicated warehouse inside the Dubai Airport Free Zone. We are equipped with all facilities and services required by our valuable customers and partners in and out of Dubai\'s freight forwarding markets.': 'تأسست يونيون لوجستكس عام 2006 في قلب دبي، الإمارات - مع مستودع خاص داخل منطقة دبي الحرة للمطار. نحن مجهزون بجميع المرافق والخدمات المطلوبة من عملائنا وشركائنا في أسواق الشحن في دبي وخارجها.',
-  'With our expansion into Hong Kong, we now bridge the gap between the Middle East and the Far East, offering seamless end-to-end logistics solutions across air, sea, road, and customs services.': 'مع توسعنا إلى هونغ كونغ، نربط الآن الشرق الأوسط بالشرق الأقصى، ونقدم حلول لوجستية شاملة عبر الجو والبحر والبر والتخليص الجمركي.',
+  'With our expansion into Hong Kong, Miami, Syria, Saudi Arabia and more countries worldwide, we now bridge the gap between the Middle East and other continents, offering seamless end-to-end logistics solutions across air, sea, road, and customs services.': 'مع توسعنا إلى هونغ كونغ وميامي وسوريا والمملكة العربية السعودية ودول أخرى حول العالم، نحن الآن نسد الفجوة بين الشرق الأوسط والقارات الأخرى، ونقدم حلول لوجستية متكاملة عبر الشحن الجوي والبحري والبري وخدمات التخليص الجمركي.',
   'Own warehouse inside Dubai Airport Free Zone': 'مستودع خاص داخل منطقة دبي الحرة للمطار',
   'Advanced IT system for track & trace': 'نظام تقنية معلومات متقدم للتتبع',
   'Offices in Dubai (UAE) and Hong Kong (China)': 'مكاتب في دبي (الإمارات) وهونغ كونغ (الصين)',
